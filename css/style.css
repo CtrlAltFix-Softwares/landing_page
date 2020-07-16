@@ -1,0 +1,15 @@
+.col-c.col {
+    -webkit-flex: 2;
+    -webkit-order: 1;
+}
+
+.col-b {
+    -webkit-align-self: center;
+}
+
+.nav li {
+    -webkit-flex-grow: 1;
+
+}
+
+
