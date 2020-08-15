@@ -1,15 +1,180 @@
-.col-c.col {
-    -webkit-flex: 2;
-    -webkit-order: 1;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.col-b {
-    -webkit-align-self: center;
+body {
+    font-family: 'Lato', sans-serif;
+    color: #2d3436;
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.nav li {
-    -webkit-flex-grow: 1;
-
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
+h1 {
+    font-size: 2.75rem;
+}
 
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.75rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+h6 {
+    font-size: 1.15rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+nav {
+    padding: 30px 100px;
+}
+
+.custom-px {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.custom-py {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/** This is to turn the nav children to flex items */
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/** This set the items to the edge of the page */
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/** This ensures that the flex items are vertically aligned */
+.align-items-center {
+    align-items: center;
+}
+
+/** This places the element to the center */
+.text-center {
+    text-align: center;
+}
+
+.nav-header {
+    color: #0984e3;
+    font-weight: 900;
+}
+
+.text-red {
+    color: #e74c3c;
+}
+
+.hero-bg {
+    background: linear-gradient(rgba(30, 37, 44, 0.6), rgba(30, 37, 44, 0.6)), url('../img/hero-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 130px;
+    color: #ffffff;
+}
+
+.hero-text {
+    font-size: 900;
+    font-size: 5rem;
+    color: #ffffff;
+}
+
+.col-5 {
+    flex: 0 0 45%;
+}
+
+.col-4 {
+    flex: 0 0 33.3333%;
+}
+
+.font-weight-light {
+    font-weight: 400;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul li {
+    font-size: 1.5rem;
+    line-height: 40px;
+    font-weight: 700;
+    list-style-position: inside;
+}
+
+.btn {
+    background-color: #e74c3c;
+    border: 0;
+    outline: 0;
+    padding: 18px 80px;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 1rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.brands {
+    margin-top: 30px;
+}
+
+.brands a {
+    display: inline-block;
+    text-decoration: none;
+    color: #2d3436;
+    margin-right: 10px;
+}
+
+.brands i {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-description {
+    background-color: #0984e3;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.icon-description i {
+    color: grey;
+}
+
+.icon-description h5 {
+    padding: 5px 0;
+}
